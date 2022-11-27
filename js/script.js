@@ -10,7 +10,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
 function myButtonClicked() {
   const age = document.getElementById("age").value

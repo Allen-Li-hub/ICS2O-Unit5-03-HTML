@@ -4,29 +4,29 @@
 // Created on: Oct 2022
 // This file contains the JS functions for index.html
 
-"use strict"
-
-/**
- * Check servie worker.
- */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit5-01-HTML/sw.js", {
-    scope: "/ICS2O-Unit5-01-HTML/",
+  navigator.serviceWorker.register("/Unit-5-03-JS/sw.js", {
+    scope: "/Unit-5-03-JS/",
   })
 }
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
+"use strict"
 
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
+function myButtonClicked() {
+  const age = document.getElementById("age").value
 
-  if (valueFromSlider == randomNumber) {
-    document.getElementById("answer").innerHTML =
-      "the answer was, " + randomNumber + "!" + " You got it! Excellent."
+  if (age >= 17) {
+    document.getElementById("answers").innerHTML =
+      "You can see an R movie alone."
+  } else if (age >= 13) {
+    document.getElementById("answers").innerHTML =
+      "You can see a PG-13 movie alone"
+  } else if (age >= 5) {
+    document.getElementById("answers").innerHTML =
+      "You can see a G or PG movie alone."
+  } else {
+    document.getElementById("answers").innerHTML =
+      "Uh. your too young for most things."
   }
-
-  if (valueFromSlider != randomNumber) {
-    document.getElementById("answer").innerHTML =
-      "Sorry the answer was, " + randomNumber + "!" + " please try again."
-  }
+  console.log("Thanks for verifying you're age!")
 }

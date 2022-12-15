@@ -4,15 +4,15 @@
 // Created on: Oct 2022
 // This file contains the JS functions for index.html
 
+"use strict"
+
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/Unit-5-03-JS/sw.js", {
-    scope: "/Unit-5-03-JS/",
+  navigator.serviceWorker.register("/ICS2O-Unit5-03-HTML/sw.js", {
+    scope: "/ICS2O-Unit5-03-HTML/",
   })
 }
 
-;("use strict")
-
-function myButtonClicked() {
+function calculate() {
   const age = document.getElementById("age").value
 
   if (age >= 18) {

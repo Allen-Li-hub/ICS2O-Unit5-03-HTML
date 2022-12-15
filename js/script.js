@@ -16,15 +16,15 @@ function calculate() {
   const age = document.getElementById("age").value
 
   if (age >= 18) {
-    document.getElementById("answers").innerHTML =
+    document.getElementById("answer").innerHTML =
       "You can see G, PG and R rated movies!"
   } else if (age >= 13) {
-    document.getElementById("answers").innerHTML =
+    document.getElementById("answer").innerHTML =
       "You can see G and PG rated movies!"
   } else if (age >= 5) {
-    document.getElementById("answers").innerHTML = "You can see G rated movies!"
+    document.getElementById("answer").innerHTML = "You can see G rated movies!"
   } else {
-    document.getElementById("answers").innerHTML =
+    document.getElementById("answer").innerHTML =
       "you can hardly watch any movies"
   }
   console.log("Thanks for verifying you're age!")

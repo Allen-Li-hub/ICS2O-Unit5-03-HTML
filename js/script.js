@@ -15,7 +15,7 @@ if (navigator.serviceWorker) {
 function myButtonClicked() {
   const age = document.getElementById("age").value
 
-  if (age >= 17) {
+  if (age >= 18) {
     document.getElementById("answers").innerHTML =
       "You can see an R movie alone."
   } else if (age >= 13) {

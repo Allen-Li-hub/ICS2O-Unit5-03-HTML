@@ -22,8 +22,7 @@ function myButtonClicked() {
     document.getElementById("answers").innerHTML =
       "You can see G and PG rated movies!"
   } else if (age >= 5) {
-    document.getElementById("answers").innerHTML =
-      "You can see G rated movies!"
+    document.getElementById("answers").innerHTML = "You can see G rated movies!"
   } else {
     document.getElementById("answers").innerHTML =
       "you can hardly watch any movies"

@@ -17,16 +17,16 @@ function myButtonClicked() {
 
   if (age >= 18) {
     document.getElementById("answers").innerHTML =
-      "You can see an R movie alone."
+      "You can see G, PG and R rated movies!"
   } else if (age >= 13) {
     document.getElementById("answers").innerHTML =
-      "You can see a PG-13 movie alone"
+      "You can see G and PG rated movies!"
   } else if (age >= 5) {
     document.getElementById("answers").innerHTML =
-      "You can see a G or PG movie alone."
+      "You can see G rated movies!"
   } else {
     document.getElementById("answers").innerHTML =
-      "Uh. your too young for most things."
+      "you can hardly watch any movies"
   }
   console.log("Thanks for verifying you're age!")
 }
